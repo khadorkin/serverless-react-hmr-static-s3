@@ -94,6 +94,6 @@
     "build": "node tools/build --release",
     "build:debug": "node tools/build",
     "deploy": "npm run build && sls client deploy",
-    "start": "node tools/start"
+    "start": "npm run build && node tools/start"
   }
 }
