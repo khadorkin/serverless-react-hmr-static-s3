@@ -1,0 +1,11 @@
+{
+  "name": "serverless-react-hmr-static-s3",
+  "plugins": [
+    "serverless-client-s3"
+  ],
+  "custom" : {
+    "client": {
+        "bucketName": "my.bucket.${stage}.${region}"
+    }
+  }
+}
